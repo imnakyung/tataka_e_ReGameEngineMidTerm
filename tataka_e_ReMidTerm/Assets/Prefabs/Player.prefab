@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 4
-  jumpForce: 5
+  jumpForce: 7
   groundCheck: {fileID: 5254302424471825364}
   groundLayer:
     serializedVersion: 2
