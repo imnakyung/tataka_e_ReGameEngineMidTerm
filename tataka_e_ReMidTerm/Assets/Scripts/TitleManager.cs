@@ -3,20 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
-    public GameObject helpPanel;
+    public GameObject HelpPanel;
 
     public void GameStart()
     {
-        SceneManagement.LoadScene("PlayScene_Door1");
+        SceneManager.LoadScene("Level_1");
     }
-
     public void OpenHelp()
     {
-        helpPanel.SetActive(true);
+        HelpPanel.SetActive(true);
     }
 
     public void CloseHelp()
     {
-        helpPanel.SetActive(false);
+        HelpPanel.SetActive(false);
     }
 }
