@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+
 public class PlayerController : MonoBehaviour
 {
-  public float moveSpeed = 5f;
-    public float jumpForce = 5f;
+    public float moveSpeed = 3f;
+    public float jumpForce = 3f;
     public Transform groundCheck;
     public LayerMask groundLayer;
     private Animator pAni;
@@ -80,10 +81,6 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        if (collision.CompareTag("Item"))
-        {
-            isGiant = true;
-            Destroy(collision.gameObject);
-        }
+        
     }
 }
